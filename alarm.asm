@@ -48,7 +48,6 @@ get_input:
     int 21h
     sub al, '0'      
 
-    ; Logic: Instead of jumping far, we check and call right here
     cmp al, 1
     jne check_2
     call set_alarm_proc
